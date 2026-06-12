@@ -521,6 +521,33 @@
       footer { flex-direction: column; gap: 8px; text-align: center; }
       .resume-entry { grid-template-columns: 1fr; }
     }
+    /* ── LINKEDIN SECTION ── */
+    .linkedin-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 12px;
+    }
+    .linkedin-card {
+      background: transparent;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      overflow: hidden;
+      width: 100%;
+    }
+    .linkedin-card iframe {
+      width: 100% !important;
+      min-height: 500px;
+      border: none;
+    }
+
+    /* Adjust for tablet and mobile viewports */
+    @media (max-width: 860px) {
+      .linkedin-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -637,6 +664,30 @@
         </a>
 
       </div>
+
+      <!-- LINKEDIN EMBEDS -->
+<div class="container">
+  <section id="linkedin-updates">
+    <p class="section-label">Latest Updates</p>
+    <h2 class="section-title fade-in" style="margin-bottom: 32px;">Recent Insights &amp;<br><em>Analysis</em></h2>
+    
+    <div class="linkedin-grid fade-in">
+      <div class="linkedin-card">
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7429212996591108096?collapsed=1" height="628" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        
+      </div>
+      <div class="linkedin-card">
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7465449141725429761?collapsed=1" height="645" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        
+      </div>
+      <div class="linkedin-card">
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7424944337584816128" height="939" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
+        
+      </div>
+    </div>
+  </section>
+</div>
 
       <!-- SUBSTACK -->
       <div style="margin-top: 56px;" class="fade-in">
